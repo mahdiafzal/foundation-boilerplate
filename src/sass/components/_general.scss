@@ -2,10 +2,6 @@
     min-height: 100vh;
 }
 
-.primary-color {
-    color: map_get($color-palette, 'Orange');
-}
-
 .isBlock {
     display: block !important;
 }
@@ -36,6 +32,14 @@
 
 .isTextLeft {
     text-align: left !important;
+}
+
+.isRtl {
+    direction: rtl !important;
+}
+
+.isLtr {
+    direction: ltr !important;
 }
 
 .isTextColor__dark {
