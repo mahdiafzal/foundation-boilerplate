@@ -1,0 +1,275 @@
+.header {
+    padding: 5px 0;
+}
+
+.header__date {
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+    @media (min-width: 40rem) {
+        text-align: right;
+        margin-top: 30px;
+    }
+    @media (min-width: 64rem) {
+        text-align: right;
+        margin-top: 40px;
+    }
+}
+
+.siteLogo {
+    margin: 0 10px;
+    @media (max-width: 40rem) {
+        width: calc(16.66667% - 1.53846rem)
+    }
+}
+
+.header__login__text {
+    color: map_get($color-palette, 'dimGray');
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-align: center;
+    @media (min-width: 40rem) {
+        margin-top: 20px;
+        margin-right: 10px;
+        text-align: right;
+    }
+}
+
+.primary__link {
+    color: map_get($color-palette, 'dimGray');
+    &:hover {
+        color: map_get($color-palette, 'Orange');
+    }
+}
+
+.header__icon {
+    color: map_get($color-palette, 'dimGray');
+    font-size: 20px;
+    margin-bottom: 15px;
+    @media (min-width: 40rem) {
+        margin-bottom: 0px;
+    }
+}
+
+.searchBox {
+    position: relative;
+    font-family: Vazir;
+    margin-top: 20px;
+    @media (min-width: 40rem) {
+        margin-top: 30px;
+    }
+}
+
+.searchBox__button {
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    left: 1px;
+    margin-bottom: 0;
+    width: 20%;
+    color: map_get($color-palette, 'White')!important;
+    font-family: Vazir;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 6px 8px;
+}
+
+.weather {
+    font-family: Vazir;
+    font-weight: 500;
+    background-color: map_get($color-palette, 'celeste');
+    padding: .9rem 0.3rem .9rem 2rem;
+}
+
+.navbar__menu__list__item {
+    position: relative;
+}
+
+.navbar__menu__list__item__link {
+    font-size: 13px;
+    font-weight: 500;
+    color: map_get($color-palette, 'Dark');
+    transition: all ease-in-out .05s;
+    &.active {
+        color: map_get($color-palette, 'Orange');
+    }
+    &:hover {
+        color: map_get($color-palette, 'Orange');
+    }
+}
+
+.header .top-bar-left .navbar__menu__list__item__link {
+    font-size: 14px;
+    font-weight: 500;
+    color: map_get($color-palette, 'Dark');
+    transition: all ease-in-out .05s;
+    &.active {
+        color: map_get($color-palette, 'Orange');
+    }
+    &:hover {
+        color: map_get($color-palette, 'Orange');
+        &::before {
+            color: map_get($color-palette, 'Dark');
+        }
+    }
+    &::before {
+        content: "\f053";
+        color: map_get($color-palette, 'Orange');
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        margin-left: 5px;
+    }
+}
+
+.header .top-bar-left .navbar__menu__list__item .navbar__menu__list__item__link::after,
+.header .top-bar-left .navbar__menu__list__item:first-child .navbar__menu__list__item__link::after {
+    display: none
+}
+
+.top-bar-right .navbar__menu__list__item__link {
+    padding: 0.7rem 1rem;
+    &::before {
+        display: none;
+    }
+}
+
+.top-bar-left .navbar__menu__list__item__link {
+    &::before {
+        display: none;
+    }
+}
+
+.top-bar-right .navbar__menu__list__item:first-child .navbar__menu__list__item__link {
+    font-size: 15px;
+    font-weight: 600;
+    cursor: default;
+    padding: 5px 6px;
+    &:hover {
+        color: map_get($color-palette, 'Dark');
+    }
+    &::after {
+        content: "\f053";
+        color: map_get($color-palette, 'Dark');
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        margin-top: 3px;
+        margin-right: 10px;
+    }
+}
+
+.top-bar-left .navbar__menu__list__item:first-child .navbar__menu__list__item__link {
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 5px 6px;
+    &:hover {
+        color: map_get($color-palette, 'Orange');
+    }
+    &::after {
+        position: absolute;
+        top: 10px;
+        left: 0px;
+        content: "\f078";
+        color: map_get($color-palette, 'Dark');
+        display: inline-block;
+        font-family: FontAwesome;
+        font-size: 12px !important;
+        font-weight: 300;
+        margin: 0;
+    }
+}
+
+.top-bar-left .navbar__menu__list__item .navbar__menu__list__item__link {
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 5px 6px;
+    &:hover {
+        color: map_get($color-palette, 'Orange');
+    }
+    &::after {
+        position: absolute;
+        top: 10px;
+        left: -10px;
+        content: "\f078";
+        color: map_get($color-palette, 'Dark');
+        display: inline-block;
+        font-family: FontAwesome;
+        font-size: 12px !important;
+        font-weight: 300;
+        margin: 0;
+    }
+}
+
+.header__login__image {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 40rem) {
+    .header__menu__top {
+        margin-right: 40px;
+    }
+    .sumMenuHeader {
+        margin-top: 15px;
+        margin-right: 0;
+    }
+    .header__login__image {
+        margin-top: 10px;
+        float: left;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 64rem) {
+    .sumMenuHeader {
+        margin-top: -15px;
+        margin-right: 238px;
+    }
+}
+
+.header__logo {
+    margin: auto;
+}
+
+.title-bar.main__menu {
+    background: map_get($color-palette, 'Orange');
+}
+
+.title-bar.news__menu {
+    background: map_get($color-palette, 'Dark');
+}
+
+.title-bar.article__menu {
+    background: map_get($color-palette, 'cardinal');
+}
+
+.title-bar.knowing__menu {
+    background: map_get($color-palette, 'ultraBlue');
+}
+
+.title-bar.multimedia__menu {
+    background: map_get($color-palette, 'Dark');
+}
+
+.title-bar.tourism__menu {
+    background: map_get($color-palette, 'deepSea');
+}
+
+.title-bar.website__menu {
+    background: map_get($color-palette, 'darkPurple');
+}
+
+.title-bar.music__menu {
+    background: map_get($color-palette, 'royalBlue');
+}
+
+.title-bar.sport__menu {
+    background: map_get($color-palette, 'royalBlue');
+}

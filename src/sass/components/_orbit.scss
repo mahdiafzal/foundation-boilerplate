@@ -1,0 +1,77 @@
+.orbit-caption {
+    background-color: rgba(10, 10, 10, 0.9);
+    font-size: 15px;
+    padding-bottom: 2.5rem;
+}
+
+.orbit-bullets {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.orbit-bullets button {
+    width: 0.8rem;
+    height: 0.8rem;
+    &:focus {
+        outline: none;
+    }
+    &.is-active {
+        background-color: map_get($color-palette, 'Orange');
+    }
+}
+
+.news .orbit-caption {
+    background-color: rgba(10, 10, 10, 0.9);
+    font-size: 15px;
+    padding-bottom: 1rem;
+}
+
+.news .orbit-bullets {
+    position: absolute;
+    right: 80%;
+    left: 0;
+    bottom: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.sport .orbit-caption {
+    background-color: map_get($color-palette, 'cornFlowerBlue');
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.sport .orbit-bullets {
+    position: relative;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.sport__thumbnail {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.sport .orbit-bullets button {
+    background-color: transparent;
+    border-radius: 0;
+    width: 7rem;
+    height: 5rem;
+    &.is-active {
+        .sport__thumbnail::before {
+            content: "";
+            border-right: 11px solid transparent;
+            border-bottom: 12px solid #fff;
+            border-left: 11px solid transparent;
+            position: absolute;
+            top: -17px;
+            left: 50%;
+            margin-left: -11px;
+            z-index: 10;
+        }
+    }
+}

@@ -1,0 +1,90 @@
+.thumbnail {
+    border: solid 4px #fff;
+    width: 100%;
+}
+
+.thumnail__site {
+    position: relative;
+}
+
+.thumnail__title {
+    padding: 10px;
+    height: 80px;
+    font-family: Vazir;
+    text-align: center;
+    overflow: hidden;
+    transition: color ease-in-out .2s;
+}
+
+.thumnail__link {
+    display: block;
+    transition: color ease-in-out .2s;
+    h3,
+    p {
+        color: map_get($color-palette, 'Dark')
+    }
+    &:hover {
+        h3,
+        p,
+        .thumnail__site__title,
+        .thumnail__site__title__full {
+            color: map_get($color-palette, 'Orange')
+        }
+    }
+}
+
+.require .thumnail__link:hover {
+    .isBg-silverSand {
+        background-color: map_get($color-palette, 'Orange') !important;
+    }
+    .fill__box__title {
+        color: map_get($color-palette, 'Dark') !important;
+    }
+}
+
+.thumnail__site__title {
+    position: absolute;
+    bottom: 6px;
+    right: 5px;
+    left: 6px;
+    color: #fefefe;
+    background-color: rgba(10, 10, 10, 0.95);
+    font-family: Vazir;
+    font-size: 13px;
+    padding: 1rem;
+    text-align: center;
+    transition: color ease-in-out .2s;
+}
+
+.thumnail__site__title__full {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: #fefefe;
+    background-color: rgba(10, 10, 10, 0.95);
+    font-family: Vazir;
+    font-size: 13px;
+    padding: 1rem;
+    text-align: center;
+    transition: color ease-in-out .2s;
+}
+
+.fill__box {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+}
+
+.fill__box__title {
+    font-family: Vazir;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    transition: all ease-in-out .2s;
+}
+
+a:hover .fill__box__title,
+a:focus .fill__box__title {
+    color: map_get($color-palette, 'Orange');
+}
