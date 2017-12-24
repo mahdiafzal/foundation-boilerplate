@@ -1,6 +1,4 @@
-# شبکه اینترنتی آفتاب
-
-
+# Foundation Framework Css
 
 ---
 
@@ -8,12 +6,12 @@
 
 1. Get the sourcecode:
     ```
-    $ git clone https://github.com/dashtinejad/aftab.git
+    $ git clone https://github.com/dashtinejad/foundation-boilerplate.git
     ```
 
 2. Switch to its directory:
     ```
-    $ cd aftab
+    $ cd foundation-boilerplate
     ```
 
 3. Run `npm install` command, it will install dependencies:
