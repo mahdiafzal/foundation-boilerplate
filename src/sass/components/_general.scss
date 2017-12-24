@@ -1,16 +1,5 @@
 .wrapper {
-    background-color: map_get($color-palette, 'whiteSmoke');
-    box-shadow: 0px 0px 10px 5px #bbb;
     min-height: 100vh;
-    @include breakpoint(xlarge) {
-        width: 80%;
-        padding-bottom: 5px;
-        margin: auto;
-    }
-}
-
-hr {
-    border-bottom: 1px solid map_get($color-palette, 'Whisper');
 }
 
 .primary-color {
@@ -53,32 +42,8 @@ hr {
     color: map_get($color-palette, 'Dark') !important;
 }
 
-.isTextColor__orange {
-    color: map_get($color-palette, 'Orange') !important;
-}
-
-.isTextColor__cardinal {
-    color: map_get($color-palette, 'cardinal') !important;
-}
-
-.isTextColor__ultraBlue {
-    color: map_get($color-palette, 'ultraBlue') !important;
-}
-
-.isTextColor__deepSea {
-    color: map_get($color-palette, 'deepSea') !important;
-}
-
-.isTextColor__darkPurple {
-    color: map_get($color-palette, 'darkPurple') !important;
-}
-
-.isTextColor__royalBlue {
-    color: map_get($color-palette, 'royalBlue') !important;
-}
-
-.isTextColor__cornFlowerBlue {
-    color: map_get($color-palette, 'cornFlowerBlue') !important;
+.isTextColor__white {
+    color: map_get($color-palette, 'White') !important;
 }
 
 .isWrapText {
@@ -94,13 +59,13 @@ hr {
 .isBorder {
     border-width: 1px;
     border-style: solid;
-    border-color: #c5c5c5;
+    border-color: map_get($color-palette, 'Dark');
 }
 
 .isBorder__top_lg {
     border-width: 3px 0 0 0;
     border-style: solid;
-    border-color: #000;
+    border-color: map_get($color-palette, 'Dark');
 }
 
 .isBorder__bottom__half {
@@ -109,32 +74,12 @@ hr {
     border-color: map_get($color-palette, 'snowDriftII');
 }
 
-.isBorder__color__blue {
-    border-color: map_get($color-palette, 'bahamaBlue')
+.isBorder__color__dark {
+    border-color: map_get($color-palette, 'Dark');
 }
 
-.isBorder__color__cardinal {
-    border-color: map_get($color-palette, 'cardinal') !important;
-}
-
-.isBorder__color__ultraBlue {
-    border-color: map_get($color-palette, 'ultraBlue') !important;
-}
-
-.isBorder__color__deepSea {
-    border-color: map_get($color-palette, 'deepSea') !important;
-}
-
-.isBorder__color__darkPurple {
-    border-color: map_get($color-palette, 'darkPurple') !important;
-}
-
-.isBorder__color__royalBlue {
-    border-color: map_get($color-palette, 'royalBlue') !important;
-}
-
-.isBorder__color__cornFlowerBlue {
-    border-color: map_get($color-palette, 'cornFlowerBlue') !important;
+.isBorder__color__white {
+    border-color: map_get($color-palette, 'White') !important;
 }
 
 .isBolder {
@@ -150,27 +95,7 @@ hr {
 }
 
 .isBg-white {
-    background-color: #fff !important;
-}
-
-.isBg-Orange {
-    background-color: map_get($color-palette, 'Orange') !important;
-    transition: color ease-in-out .2s;
-}
-
-.isBg-whiteSmoke {
-    background-color: map_get($color-palette, 'whiteSmoke') !important;
-    transition: color ease-in-out .2s;
-}
-
-.isBg-snow {
-    background-color: map_get($color-palette, 'snowDrift') !important;
-    transition: color ease-in-out .2s;
-}
-
-.isBg-silverSand {
-    background-color: map_get($color-palette, 'silverSand') !important;
-    transition: color ease-in-out .2s;
+    background-color: map_get($color-palette, 'White') !important;
 }
 
 .size-10 {
@@ -227,10 +152,6 @@ hr {
 
 .height-80 {
     height: 80px !important;
-}
-
-.height-115 {
-    height: 115px !important;
 }
 
 .p-xxxs {
@@ -505,138 +426,4 @@ hr {
     width: 100%;
     padding-top: 150%;
     height: 0;
-}
-
-.slider__photo__fix {
-    background-color: #eee;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    padding-top: 56%;
-    height: 0;
-}
-
-.news .slider__photo__fix {
-    background-color: #eee;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    padding-top: 45.5%;
-    height: 0;
-}
-
-.grid-padding-x {
-    .grid-padding-x {
-      @include xy-gutters($gutters: 10px, $negative: true);
-    }
-    .grid-container:not(.full) > & {
-      @include xy-gutters($gutters: 10px, $negative: true);
-    }
-    > .cell {
-      @include xy-gutters($gutters: 10px, $gutter-type: padding);
-    }
-}
-
-.grid-x.grid-padding-x.grid-advertising {
-    margin-right: -0.18462rem !important;
-    margin-left: -0.18462rem !important;
-}
-
-.grid-x-custom {
-    @include breakpoint(small) {
-        @include xy-grid-layout(2, '.grid-10', $gutter-type: padding, $gutters: 10px, $gutter-position: top right bottom left);
-        @include xy-grid-layout(1, '.grid-9', $gutter-type: padding, $gutters: 10px, $gutter-position: top right bottom left);
-        @include xy-grid-layout(1, '.grid-3', $gutter-type: padding, $gutters: 5px, $gutter-position: right left);
-        @include xy-grid-layout(1, '.grid-require-2', $gutter-type: margin, $gutters: 5px, $gutter-position: right left);
-    }
-    @include breakpoint(medium) {
-        @include xy-grid-layout(5, '.grid-10', $gutter-type: padding, $gutters: 10px, $gutter-position: top right bottom left);
-        @include xy-grid-layout(3, '.grid-9', $gutter-type: padding, $gutters: 10px, $gutter-position: top right bottom left);
-        @include xy-grid-layout(1, '.grid-3', $gutter-type: padding, $gutters: 5px, $gutter-position: right left);
-        @include xy-grid-layout(2, '.grid-require-2', $gutter-type: margin, $gutters: 5px, $gutter-position: right left);
-    }
-    @include breakpoint(large) {
-        @include xy-grid-layout(10, '.grid-10', $gutter-type: padding, $gutters: 10px, $gutter-position: top right bottom left);
-        @include xy-grid-layout(9, '.grid-9', $gutter-type: padding, $gutters: 10px, $gutter-position: top right bottom left);
-        @include xy-grid-layout(3, '.grid-3', $gutter-type: padding, $gutters: 5px, $gutter-position: right left);
-        @include xy-grid-layout(2, '.grid-require-2', $gutter-type: margin, $gutters: 5px, $gutter-position: right left);
-    }
-}
-
-.list {
-    position: relative;
-}
-
-.list__link {
-    display: block;
-    color: #000;
-    &:hover {
-        color: map_get($color-palette, 'Orange');
-    }
-}
-
-.list__item {
-    font-family: Vazir;
-    font-size: 15px;
-    padding: 6px 0;
-    &:before {
-        content: "";
-        position: absolute;
-        right: -15px;
-        width: 9px;
-        height: 9px;
-        background-color: map_get($color-palette, 'Orange');
-        margin-top: 6px;
-    }
-}
-
-.sport .list__item {
-    font-family: Vazir;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 6px 15px 6px 5px;
-    &:before {
-        content: "";
-        position: absolute;
-        right: 0;
-        width: 9px;
-        height: 9px;
-        background-color: map_get($color-palette, 'Orange');
-        margin-top: 6px;
-    }
-}
-
-.sport__news {
-    @media (max-width: 1400px) {
-        height: 550px;
-    }
-    @media (max-width: 1200px) {
-        padding: 15px 10px 15px 5px !important;
-        height: 500px;
-    }
-    @media (max-width: 991px) {
-        height: 400px;
-    }
-    @media (max-width: 767px) {
-        height: 350px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    @media (max-width: 480px) {
-        height: 300px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-}
-
-.list__link+.list__link>.list__item {
-    border-top: 1px solid #c8c8c8;
-}
-
-.navbar {
-    @media (max-width: 767px) {
-        margin-bottom: 10px;
-    }
 }
