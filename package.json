@@ -1,5 +1,5 @@
 {
-  "name": "ghasedak",
+  "name": "foundation-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Mojtaba Dashtinejad <mojtaba@gmail.com> (https://github.com/dashtinejad)",
+  "author": "Mahdi Afzal <mahdiafzal@gmail.com> (https://github.com/mahdiafzal)",
   "devDependencies": {
     "browser-sync": "^2.18.7",
     "gulp": "^3.9.1",
