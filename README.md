@@ -6,7 +6,7 @@
 
 1. Get the sourcecode:
     ```
-    $ git clone https://github.com/dashtinejad/foundation-boilerplate.git
+    $ git clone https://github.com/mahdiafzal/foundation-boilerplate.git
     ```
 
 2. Switch to its directory:
